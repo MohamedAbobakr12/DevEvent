@@ -19,7 +19,7 @@ const Page = () => {
               <EventCard {...event} />
             </li>
           ))}
-        </>
+        </ul>
       </div>
     </section>
   )
