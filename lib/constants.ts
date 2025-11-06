@@ -1,4 +1,13 @@
-export const events = [
+export type EventItem = {
+    image: string;
+    title: string;
+    slug: string;
+    location: string;
+    date: string; // e.g., "2025-11-07"
+    time: string; // e.g., "09:00 AM"
+}
+
+export const events: EventItem[] = [
     {
         slug: "react-conf-2024",
         image: "/images/event1.png",

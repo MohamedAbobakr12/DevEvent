@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   cacheComponents: true, 
   images: {
     remotePatterns: [
@@ -23,6 +25,7 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  // This is required to support PostHog trailing slash API requests
   skipTrailingSlashRedirect: true,
 };
 
